@@ -1,14 +1,21 @@
 @font-face {
-    font-family: "Neue Montreal";
+    font-family: "Neue-Montreal";
     src: url(../font/NeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family: "Neue-Montreal-light";
+    src: url(../font/NeueMontreal-Light.otf);
+}
+@font-face {
+    font-family: "Neue-Montreal-regular";
+    src: url(../font/NeueMontreal-Regular.otf);
 }
 
 body {
-    font-family:"Neue Montreal";
+    font-family:"Neue-Montreal-regular";
     font-size: 1.5rem;
 }
-
-h1, h2, h3 {
+h2, h3 {
     font-size: 2.5rem;
     font-weight: 750;
 }
@@ -20,7 +27,7 @@ h1, h2, h3 {
         font-size: 2rem;
     }
 
-    h1, h2, h3 {
+    h2, h3 {
         font-size: 3.5rem;
     }
 

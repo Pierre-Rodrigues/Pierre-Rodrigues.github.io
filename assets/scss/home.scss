@@ -1,93 +1,48 @@
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10vh;
-    width: 100%;
-    background-color: #e1dfdd;
+@use "base/typography";
+
+h2{
+    font-size: 8rem;
+    text-transform: uppercase;
 }
 
-.navigation, .navbar, .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navigation {
-    height: 100%;
-    width: 100%;
-    padding: 0 2rem;
-    font-weight: bolder;
-}
-.navbar p, .menu a{
-    margin: 0 2vw;
+.name {
+    text-align: end;
 }
 
-
-.toggle,.none {
-    display: none;
-}
-
-
-@media all and (max-width : 800px) {
-    .toggle {
-        display: block;
-        cursor: pointer;
-        position: relative;
-        z-index: 20;
-
-        &__open {
-            display: block;
-            font-size: 3rem;
-        }
-
-        &__close {
-            display: none;
-        }
+.list{
+    &__number{
+        margin: 4rem 0;
+        font-family: "Neue-Montreal-light";
     }
 
-    .open .toggle__open {
-        display: none;
-    }
-
-    .open .toggle__close {
-        display: block;
-        color: #e1dfdd;
-        font-size: 4rem;
-    }
-    .open .home {
-        color: #e1dfdd;
-        z-index: 20;
-    }
-
-    .navbar{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #464c47;
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-        align-items: flex-start;
-        transform: translateY(100%);
-        transition: 0.8s cubic-bezier(0,0,.56,1);
-
-        .menu{
-            flex-direction: column;
-            align-items: flex-start;
-            font-size: 6rem;
+    &__text{
+        margin-bottom: 2rem;
+        &__uppercase{
             text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 5rem;
         }
-        p, a{
-            color: #e1dfdd;
-            margin: 4rem 2rem;
-        }
-        
-
-
     }
-    .open .navbar{
-        transform: translateY(0);
+}
+
+
+@media all and (min-width : 800px) {
+    .list{
+        display: flex;
+        margin-top: 20rem;
+
+        &__number{
+            margin: 0;
+            margin-right: 20%;
+        }
+
+        &__text{
+            &__uppercase{
+                font-size: 4rem;
+                br{
+                    margin: 2rem;
+                }
+            }
+        }
     }
 }
