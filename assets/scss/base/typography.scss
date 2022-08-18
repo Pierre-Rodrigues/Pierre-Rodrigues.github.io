@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Neue Montreal";
+    src: url(../font/NeueMontreal-Medium.otf);
+}
+
+body {
+    font-family:"Neue Montreal";
+    font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+    font-size: 2.5rem;
+    font-weight: 750;
+}
+
+
+@media (min-width : 425px ){
+    // A partir de 425px on va afficher...
+    body {
+        font-size: 2rem;
+    }
+
+    h1, h2, h3 {
+        font-size: 3.5rem;
+    }
+
+
+}
