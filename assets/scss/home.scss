@@ -20,11 +20,12 @@ h2{
         &__uppercase{
             text-transform: uppercase;
             font-size: 2.5rem;
-            margin-bottom: 5rem;
         }
     }
 }
-
+.presentation{
+    margin-bottom: 5rem;
+}
 
 @media all and (min-width : 800px) {
     .list{
@@ -46,3 +47,96 @@ h2{
         }
     }
 }
+
+/* ACCORDION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.accordion {
+    position: relative;
+   margin:0
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .accordion li,
+  .accordion{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    text-align:left;
+    padding: 2rem 0;
+  }
+
+  .accordion__title{
+      display: flex;
+      justify-content: space-between;
+        align-items: center;
+  }
+
+  .accordion__number{
+      font-size: 2rem;
+  }
+  
+  .accordion .accordion-content {
+      box-sizing: border-box;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height, .5s;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin:0;
+      transition: all .5s;
+  }
+  .content:before {
+    content: '';
+    border-top: 2px solid ;
+    width: 10px;
+    display: block;
+    transition: 0.3s;
+    margin-left: 6px;
+
+	}
+  .cross:before,.cross:after {
+    content: '';
+   border-top: 2px solid;
+   width: 12px;
+   display: block;
+   transition: 0.3s;
+   margin-left: 5px;
+}
+
+.cross:after {
+   transform: rotate(90deg);
+   margin-top: -2px;
+}	
+
+input:checked ~ .content {
+    max-height: 400px;
+    transition: max-height, 1s;
+}
+input:checked ~ label .cross-box{
+	background-color:#93c04d;
+}
+input:checked ~ label .cross:before {
+    transform: rotate(180deg);
+}
+
+input:checked ~ label .cross:after {
+    transform: rotate(0deg);
+}
+
+input:checked ~ .questions {
+    max-height: 400px;
+    transition: 1s;
+}
+
+  
+  [value="Panel_1"]:checked ~ .accordion [for="Panel_1"] + .accordion-content,
+  [value="Panel_2"]:checked ~ .accordion [for="Panel_2"] + .accordion-content,
+  [value="Panel_3"]:checked ~ .accordion [for="Panel_3"] + .accordion-content {
+        max-height: 400px;
+  }
+  
