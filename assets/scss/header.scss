@@ -22,7 +22,6 @@ header {
     
     .home{ 
         font-size: 3rem;
-        margin-left: 3rem;
     }
 }
 .menu a {
@@ -105,7 +104,7 @@ header {
 
     .open .navbar {
         transform: translateY(0);
-        transition: 0.8s cubic-bezier(0, 0, .56, 1);
+        transition: 0.8s cubic-bezier(0, 0, .56, 0);
     }
 }
 

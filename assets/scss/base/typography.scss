@@ -2,34 +2,59 @@
     font-family: "Neue-Montreal";
     src: url(../font/NeueMontreal-Medium.otf);
 }
+
 @font-face {
     font-family: "Neue-Montreal-light";
     src: url(../font/NeueMontreal-Light.otf);
 }
+
 @font-face {
     font-family: "Neue-Montreal-regular";
     src: url(../font/NeueMontreal-Regular.otf);
 }
 
 body {
-    font-family:"Neue-Montreal-regular";
+    font-family: "Neue-Montreal-regular";
     font-size: 1.5rem;
 }
-h2, h3 {
-    font-size: 2.5rem;
+
+h2,
+h3 {
+    font-size: 2rem;
     font-weight: 750;
 }
 
+footer {
+    font-family: "Neue-Montreal";
+}
 
-@media (min-width : 425px ){
+
+@media (min-width : 425px) {
+
     // A partir de 425px on va afficher...
     body {
         font-size: 2rem;
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         font-size: 3.5rem;
     }
+}
+@media (min-width : 800px) {
+    // A partir de 1024px on va afficher...
 
+    h2 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+}
 
+@media (min-width : 1024px) {
+    // A partir de 1024px on va afficher...
+
+    h2 {
+        font-size: 8rem;
+        text-transform: uppercase;
+    }
 }
