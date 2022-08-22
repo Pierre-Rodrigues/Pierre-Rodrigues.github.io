@@ -6,7 +6,7 @@
 
 body{
     background-color: #e1dfdd;
-    margin: 6rem;
+    margin: 2rem;
 }
 
 html {
@@ -17,4 +17,15 @@ html {
 
 a{
     text-decoration: none;
+}
+
+@media all and (min-width : 580px) {
+    body{
+        margin: 4rem;
+    }
+}
+@media all and (min-width : 800px) {
+    body{
+        margin: 6rem;
+    }
 }

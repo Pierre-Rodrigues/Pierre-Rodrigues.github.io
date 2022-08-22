@@ -26,20 +26,40 @@ header {
 }
 .menu a {
     margin-left: 4vw;
-}
-.navbar p{
-    margin-right: 15vw;
-}
-
+display: inline-block;
+ }
 
 .toggle,.none {
     display: none;
 }
 
+.highlighted{
+    position: relative;
+}
+
+.highlighted::after {
+    content: "";
+    position: absolute;
+    background: #000000;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -0.3rem;
+    transform-origin: right;
+    transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+
+
+  
+  .highlighted:hover::after {
+    width: 100%;
+    transform: scale(1);
+  }
+
 @media all and (max-width : 580px) {
     header .navbar {
         .menu {
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
 }
@@ -97,7 +117,11 @@ header {
 
         p, a {
             color: #e1dfdd;
-            margin: 4rem 2rem;
+            margin-bottom: 1rem;
+        }
+        .highlighted::after {
+            background: #e1dfdd;
+            height: 6px;
         }
 
     }

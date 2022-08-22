@@ -6,6 +6,8 @@
 }
 
 .list{
+    padding: 2rem 0;
+
     &__number{
         margin: 4rem 0;
         font-family: "Neue-Montreal-light";
@@ -46,6 +48,12 @@
         &__number{
             margin: 0;
             margin-right: 20%;
+        }
+        &__career{
+            &__content{
+                display: flex;
+                justify-content: space-between;
+            }
         }
 
         &__text{
@@ -119,6 +127,9 @@
           padding: 1rem 0;
       }
   }
+  .cross{
+    margin-right: 1rem;
+}
   .content:before {
     content: '';
     border-top: 2px solid ;
@@ -174,12 +185,11 @@ input:checked ~ .questions {
   .footer{
       margin-top: 8rem;
       &__content{
-      margin: 2rem 0;
-
+          padding: 1rem 0;
       }
   }
 
-  @media all and (min-width : 800px) {
+  @media all and (min-width : 900px) {
     footer{
         display: flex;
         justify-content: space-between;
