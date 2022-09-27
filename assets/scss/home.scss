@@ -6,7 +6,7 @@
 }
 
 .me {
-    padding-top: 3rem;
+    padding: 3rem 0;
     width: 100%;
     height: 190px;
     object-fit: cover;
@@ -47,7 +47,11 @@
 .presentation{
     margin-bottom: 5rem;
 }
-
+@media all and (min-width : 580px) {
+    .me{
+        height: 220px;
+    }
+}
 @media all and (min-width : 800px) {
     .me{
         width: 40%;
