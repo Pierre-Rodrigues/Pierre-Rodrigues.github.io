@@ -15,6 +15,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html {
+    height: -webkit-fill-available;
+  }  
+
 a{
     text-decoration: none;
 }
