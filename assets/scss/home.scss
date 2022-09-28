@@ -157,10 +157,10 @@
 	}
   .cross:before,.cross:after {
     content: '';
-   border-top: 2px solid;
+   border-top: 2px solid black;
    width: 12px;
    display: block;
-   transition: 0.3s;
+   transition: 0.5s;
    margin-left: 5px;
 }
 
@@ -173,14 +173,12 @@ input:checked ~ .content {
     max-height: 400px;
     transition: max-height, 1s;
 }
-input:checked ~ label .cross-box{
-	background-color:#93c04d;
-}
+
 input:checked ~ label .cross:before {
     transform: rotate(180deg);
 }
 
-input:checked ~ label .cross:after {
+input:checked ~ label .cross:after{
     transform: rotate(0deg);
 }
 
@@ -190,12 +188,16 @@ input:checked ~ .questions {
 }
 
   
-  [value="Panel_1"]:checked ~ .accordion [for="Panel_1"] + .accordion__content,
-  [value="Panel_2"]:checked ~ .accordion [for="Panel_2"] + .accordion__content,
-  [value="Panel_3"]:checked ~ .accordion [for="Panel_3"] + .accordion__content {
-        max-height: 400px;
-  }
+   [value="Panel_1"]:checked ~ [for="Panel_1"] + .accordion__content,
+   [value="Panel_2"]:checked ~ [for="Panel_2"] + .accordion__content,
+   [value="Panel_3"]:checked ~ [for="Panel_3"] + .accordion__content {
+         max-height: 400px;
+   }
   
+  label{
+    cursor: pointer;
+	}
+
   // footer
 
   .footer{
