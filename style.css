@@ -544,7 +544,7 @@ input[type="radio"] {
   border-top: 2px solid;
   width: 12px;
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
   margin-left: 5px;
 }
 
@@ -575,12 +575,15 @@ input:checked~.questions {
   transition: 1s;
 }
 
-[value="Panel_1"]:checked~.accordion [for="Panel_1"]+.accordion__content,
-[value="Panel_2"]:checked~.accordion [for="Panel_2"]+.accordion__content,
-[value="Panel_3"]:checked~.accordion [for="Panel_3"]+.accordion__content {
-  max-height: 400px;
+[value="Panel_1"]:checked ~ [for="Panel_1"] + .accordion__content,
+[value="Panel_2"]:checked ~ [for="Panel_2"] + .accordion__content,
+[value="Panel_3"]:checked ~ [for="Panel_3"] + .accordion__content {
+      max-height: 400px;
 }
 
+label{
+ cursor: pointer;
+}
 /* footer
 _______________________________ */
 
