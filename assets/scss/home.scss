@@ -1,5 +1,58 @@
 @use "base/typography";
 
+// animation text up
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated{
+    position: relative;
+    height: 2.5rem;
+}
+.animated-title {
+    height: 8rem;
+    position: absolute;
+    width: 100%;
+  }
+  @media (min-width: 425px){
+    .animated-title {
+        height: 15rem;
+    }
+    .animated{
+        height: 4rem;
+    }
+}
+@media (min-width: 800px){
+    .animated-title {
+        height: 18rem;
+    }
+    .animated{
+        height: 6rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .animated-title {
+        height: 28rem;
+    }
+    .animated{
+        height: 8rem;
+    }
+}
+  .animated-title > div {
+    height: 25%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+
+.animated-title > div.text-top .up {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
 
 .name {
     text-align: end;

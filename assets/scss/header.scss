@@ -19,11 +19,22 @@ header {
     width: 100%;
     padding: 6rem;
     font-weight: bolder;
+    transform: translateY(-5rem);
+    animation: 1.5s slideIn cubic-bezier(0.62,0.05,0.01,0.99) forwards 1s;
+    opacity: 0;
     
     .home{ 
         font-size: 3rem;
     }
 }
+
+@keyframes slideIn {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
 .menu a {
     margin-left: 4vw;
 display: inline-block;
@@ -36,6 +47,8 @@ display: inline-block;
 .highlighted{
     position: relative;
 }
+
+
 
 .highlighted::after {
     content: "";
@@ -94,6 +107,10 @@ display: inline-block;
     .open .home {
         color: #e1dfdd;
         z-index: 20;
+    }
+
+    .open .animated-title > div.text-top h2 {
+        display: none;
     }
 
     .navbar {
