@@ -14,6 +14,16 @@
 
 <body>
 
+    <!-- <div class="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Chargement</span>
+    </div> -->
+
     <header>
         <nav class="navigation">
 
@@ -35,7 +45,6 @@
                     <li> <a class="highlighted" href="#footer">Contact</a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
 
@@ -67,9 +76,19 @@
                 </div>
             </div>
         </div>
-        
-        <img class="me" src="assets/img/moi.jpg" alt="Pierre Rodrigues">
-        
+
+        <div class="animated-for-img">
+            <div class="animated-img">
+                <div class="img-top">
+                    <h2 class="up">
+                        <img class="me" src="assets/img/moi.jpg" alt="Pierre Rodrigues">
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="animated">
             <div class="animated-title">
                 <div class="text-top">
@@ -125,42 +144,53 @@
             </div>
         </div>
 
-        <div class="list" id="propos">
+        <div class="list" id="#">
             <div class="list__number">
                 <p>02/</p>
             </div>
             <div>
-                <div>
-                    <h3 class="list__title">Â propos de moi</h3>
-                    <h4 class="list__text__uppercase">HandBall</h4>
-                    <p class="list__text">Je suis un grand passionné de Handball. J’ai pratiqué ce sport en tant
-                        qu’arrière/ailier gauche pendant 10 ans au club SRVHB. Aujourd’hui je soutiens toujours les
-                        matchs de ce club. </p>
-                </div>
-                <div>
-                    <h4 class="list__text__uppercase">Chasse sous-marine</h4>
-                    <p class="list__text">Etant né sur la côte et ayant un grand père passionné par l’archéologie
-                        sous-marine, j’ai toujours baigné dans le milieu marin. J’ai appris a chassé dès mon plus jeune
-                        âge. Aujourd’hui j’aime plonger pour le plaisir. </p>
-                </div>
-                <div>
-                    <h4 class="list__text__uppercase">Cuisine</h4>
-                    <p class="list__text">Je suis un grand gourmand, j’adore découvrir les spécialités culinaires et
-                        culturelles propres à chaque régions et pays. J’aime prendre le temps de concocter un bon petit
-                        plat pour satisfaire mon appétit. </p>
-                </div>
-                <div>
-                    <h4 class="list__text__uppercase">Jeux video</h4>
-                    <p class="list__text"> J’aime me détendre avec le monde de Nintendo, comme Zelda (Breath of the
-                        Wild) qui est un univers plein de découvertes et d’aventures, mais aussi pendant les parties
-                        entre amis sur Super Smash Brosh Ultimate. J’aime aussi satisfaire mon esprit de compétition sur
-                        Valorant. </p>
-                </div>
-                <div>
-                    <h4 class="list__text__uppercase">Nouvelles technologies</h4>
-                    <p class="list__text"> Je suis très curieux par l’innovation, j’aime beaucoup découvrir les
-                        nouvelles technologies.</p>
-                </div>
+                <h3 class="list__title">Projets</h3>
+                <h4 class="list__text__uppercase"> <a href="">Cat To Home</a></h4>
+                <p class="list__text">Projet réalisé en fin de formation avec une équipe de 5 personnes,
+                    Le site est destiné à mettre en relation deux personne qui souhaite adopter ou faire don de chats.
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="project">
+            <h3 class="project__name">
+                Cat To Home
+            </h3>
+            <div class="project__img">
+                <p class="projet__img__description">Projet réalisé en fin de formation avec une équipe de 5 personnes,
+                    Le site est destiné à mettre en relation deux personne qui souhaite adopter ou faire don de chats.
+                </p>
+                <div class="project__img__cover">
+                    <a class="section" href="https://cat-to-home.fr/">
+                        <img class="section__img" src="/assets/img/Cat-to-home.png" alt="Cat-to-home">
+                    </a>
+                </div> 
+
+            </div>
+        </div> -->
+
+        <div class="list" id="propos">
+            <div class="list__number">
+                <p>03/</p>
+            </div>
+            <div>
+                <div id="carousel-wrapper">
+                    <div id="menu">
+                        <div id="current-option">
+                          <span id="current-option-text1" data-previous-text="" data-next-text=""></span>
+                          <span id="current-option-text2" data-previous-text="" data-next-text=""></span>
+                        </div>
+                        <button id="previous-option"></button>
+                        <button id="next-option"></button>
+                      
+                    </div>
+                    <div id="image"></div>
+                  </div>
             </div>
         </div>
 
@@ -168,7 +198,7 @@
             <div class="list">
 
                 <div class="list__number">
-                    <p>03/</p>
+                    <p>04/</p>
                 </div>
                 <div>
                     <div class="flex-row title">
@@ -222,6 +252,7 @@
                                     <ul>
                                         <li class="accordion__content__list">Photoshop, Illustrator</li>
                                         <li class="accordion__content__list">GitHub</li>
+                                        <li class="accordion__content__list">Linux</li>
                                     </ul>
                                 </div>
                             </li>
@@ -232,13 +263,14 @@
         </section>
 
         <div class="list" id="experience">
-            <p class="list__number">04/</p>
+            <p class="list__number">05/</p>
             <div>
                 <h3 class="list__title">Formation Professionelles et Diplomes</h3>
                 <ul>
                     <li class="list__career">
                         <p class="list__career__content"> <span>Développeur Web et Web-mobile</span>
-                            <span>O'clock</span> </p>
+                            <span>O'clock</span>
+                        </p>
                     </li>
                     <li class="list__career">
                         <p class="list__career__content"> <span>Validation de competance WEB design</span> <span>Mode
@@ -261,7 +293,7 @@
         </div>
 
         <div class="list">
-            <p class="list__number">05/</p>
+            <p class="list__number">06/</p>
             <div>
                 <h3 class="list__title">Experience Professionelles</h3>
                 <ul>
@@ -274,7 +306,8 @@
                     </li>
                     <li class="list__career">
                         <p class="list__career__content"> <span>CDD Saisonnier, Moniteur de snowboard</span>
-                            <span>LimonePiemonte, Italie</span> </p>
+                            <span>LimonePiemonte, Italie</span>
+                        </p>
                     </li>
                     <li class="list__career">
                         <p class="list__career__content"> <span>CDD Saisonnier, Manœuvre en maçonnerie, Littoral
